@@ -2,7 +2,7 @@ use na::{self, Isometry3, Vector3};
 use parry3d::query;
 use parry3d::shape::{Cuboid, Cylinder};
 
-// Issue #157.
+// ncollide issue #157.
 #[test]
 fn cylinder_cuboid_contact() {
     let cyl = Cylinder::new(0.925, 0.5);
