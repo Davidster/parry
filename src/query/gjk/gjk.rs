@@ -125,7 +125,7 @@ where
             return GJKResult::Intersection;
         }
 
-        if max_bound >= old_max_bound {
+        if max_bound > old_max_bound {
             if exact_dist {
                 let (p1, p2) = result(simplex, true);
                 return GJKResult::ClosestPoints(p1, p2, old_dir); // upper bounds inconsistencies
